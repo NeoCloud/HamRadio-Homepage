@@ -1,0 +1,59 @@
+#+title: Configuring the Brutalist-Minimalist Style
+#+date: 2022-02-27T00:04:00+00:00
+#+draft: false
+#+order: 200
+
+(TBD) Explains how a site in the brutalist-minimalist style can be
+configured --- first how the hugo configiguration should look like,
+but also what options you have to tweak the visual style, both in the
+hugo configuration as well as by overriding the CSS.
+
+# more
+
+#+begin_src
+baseURL      = 'http://www.example.com/'
+languageCode = 'en-us'
+title        = 'Examplesite'
+theme        = 'brutalist-minimalist'
+relativeURLs = true
+#+end_src
+
+#+begin_src
+markup.highlight.noClasses = false
+#+end_src
+
+#+begin_src
+[params]
+
+  # --- Site config ---------------------------------
+
+  subtitle         = 'An Example Site for the Brutalist-Minimalist Style'
+  siteBasename     = 'The Example Site'
+#+end_src
+
+#+begin_src
+  # --- Style tweaking ------------------------------
+
+  bloglistLength   = 10           # number of blog posts to turn up at front page, 0 for
+                                  # none.
+
+  highlightStyle   = 'emacs'      # builtin styles: emacs, pygment. Empty for none.
+  enableKatex      = true         # If off, math is rendered as plain text (verbatim)
+
+  # Only set the following two parameters if you create
+  # the css files referenced in them.
+  #
+  styleParametersCSS  = 'css/style-parameters.css'
+  styleTweaksCSS      = 'css/style-tweaks.css'
+#+end_src
+
+#+begin_src
+  # Fall back to more minimalism
+  #
+  styleMinimalistOnly = false
+  noStylingAtAll      = false      # we use that to see how this might render in text mode
+#+end_src
+
+
+
+
