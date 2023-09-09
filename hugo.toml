@@ -3,6 +3,7 @@ languageCode = 'zh-TW'
 title        = 'NeoNetwork Ham Radio Blog'
 theme        = 'brutalist-minimalist'
 relativeURLs = true
+copyright    = "CC4.0 BY-SA"
 
 [markup]
   [markup.highlight]
