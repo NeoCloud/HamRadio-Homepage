@@ -1,14 +1,14 @@
 baseURL      = 'http://ham.neocloud.tw/'
 languageCode = 'zh-TW'
 title        = 'NeoNetwork Ham Radio Blog'
-theme        = 'brutalist-minimalist'
+theme        = 'hugo-book'
 relativeURLs = true
-copyright    = "CC4.0 BY-SA"
+copyright    = "© NeoNetwork, Licensed under CC4.0 BY-SA"
 enableGitInfo = true
 
-[markup]
-  [markup.highlight]
-    noClasses=false
+#[markup]
+#  [markup.highlight]
+#    noClasses=false
 #  [markup.tableOfContents]
 #    endLevel = 4
 #    ordered = true
@@ -16,39 +16,12 @@ enableGitInfo = true
 
 
 [params]
-
-	# --- Site config ---------------------------------
-
-	subtitle         = 'A simple blog for Ham Radio'
 	siteBasename     = 'NeoNetwork Ham Radio Blog'
+	subtitle         = 'A simple blog for Ham Radio'
 	copyright        = "NeoCloud"
 	copyrightYear    = "2021-2023" # for site in case there is no page date, not yet implemented
 
-	# --- Style tweaking ------------------------------
-
-	bloglistLength   = 5            # number of blog posts to turn up at front page, 0 for
-	                                # none.
-
-	highlightStyle   = 'emacs'      # builtin styles: emacs, pygment. Empty for none.
-	enableKatex      = true         # If off, math is rendered as plain text (verbatim)
-
-	# Only set the following parameters if you create
-	# the css files referenced in them.
-	#
-	styleParametersCSS      = 'css/style-parameters.css'
-	styleTweaksCSS          = 'css/style-tweaks.css'
-	# fontSettingsCSS         = 'css/font-settings.css'
-	
-	# Fall back to more minimalism
-	styleMinimalistOnly = false
-	noStylingAtAll      = false      # we use that to see how this might render in text mode
-
-	# Overriding responsiveness
-	# responsivenessLimitsCSS = 'css/NONE.css'
-	# limitCompactMenu      = 55
-	# limitHamburgerMenu    = 40	    
-	# limitCompactLayout    = 30	    
-	# limitNarrowLayout     = 25	  
-	# limitVeryNarrowLayout = 17
-
-	averageCharWidth        = 0.7
+	BookTheme = 'dark'
+	BookRepo = 'https://github.com/NeoCloud/HamRadio-Homepage'
+	BookPortableLinks = true
+	BookSection = '*'
