@@ -1,0 +1,3 @@
+[submodule "themes/brutalist-minimalist-gohugo-theme"]
+	path = themes/brutalist-minimalist-gohugo-theme
+	url = https://gitlab.com/m-e-leypold/brutalist-minimalist-gohugo-theme.git
