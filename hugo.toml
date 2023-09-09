@@ -4,6 +4,7 @@ title        = 'NeoNetwork Ham Radio Blog'
 theme        = 'brutalist-minimalist'
 relativeURLs = true
 copyright    = "CC4.0 BY-SA"
+enableGitInfo = true
 
 [markup]
   [markup.highlight]
